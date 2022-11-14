@@ -1,9 +1,9 @@
-# Code Quiz wit a Score board! 
+# Code Quiz with a Score board! 
 ## Description
 
 Simple code for a Coding Quiz with guidelines described on Challenge 4 of University of Toronto Bootcamp.
 
-I used long named variables to illustrate as best as possible how all the variables and functions are working together, at work level variables will use shorter names. 
+I used long named variables to illustrate as best as possible how all the variables and functions are working together, at work level all variables might use shorter names. 
 
 ## Table of Contents 
 
@@ -16,7 +16,7 @@ N/A
 
 ## Usage
 
-Good prototype for basic games using JavaScript. Code mostly done from Scratch, using as little copy and paste as possible to assist in my learning curve.
+Good prototype for basic games using JavaScript. Code mostly done from scratch, using as little copy and paste as possible to assist in my learning curve.
 
 ### Credits
 
