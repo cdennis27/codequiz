@@ -76,7 +76,7 @@ const questions = [
         index: 2,
     },
     {
-        question: 'How to write an IF statement for executing some code if "i" is NOT equal to null?',
+        question: 'How to write an "IF" statement for executing some code if "i" is NOT equal to null?',
         answer1: 'if i =! null',
         answer2: 'if (i =>! null)',
         answer3: 'if (i != null)',
