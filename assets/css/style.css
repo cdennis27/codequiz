@@ -1,0 +1,322 @@
+:root {
+    --hue-neutral: lightgrey;
+    --hue-wrong: red;
+    --hue-correct: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+header button {
+    all: unset;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: darkred;
+    box-shadow: 0 0 2px 1px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: darkred;
+    width: 175px;
+    height: 98px;
+    align-items: center;
+
+}
+
+header p {
+    font-size: 150%;
+    line-height: 32px;
+    width: fit-content;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: darkblue;
+    display: hide;
+}
+
+.instructions h1 {
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.instructions p {
+    font-size: 150%;
+    color: black;
+}
+
+.instructions button {
+    width: fit-content;
+    height: fit-content;
+    font-size: 200%;
+    background-color: rgb(240, 2, 2);
+    color: white;
+    box-shadow: 0 0 5px 2px grey;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    color: darkblue;
+}
+
+.btn {
+    all: unset;
+    --hue: var(--hue-neutral);
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+    height: 60px;
+    width: 280px;
+    border: 1px solid grey;
+    box-shadow: 0 0 5px 2px;
+    background-color: var(--hue);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+.answerConfirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.quizdone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: darkblue;
+    width: 300px;
+}
+
+.quizdone h2 {
+    font-size: 1.5rem;
+    color: darkgreen;
+    padding-top: 5px;
+}
+
+.quizdone textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.quizdone .btn {
+    width: fit-content;
+}
+
+.highscore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: darkblue;
+}
+
+.highscorepage {
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.highscorepage button {
+    position: relative;
+    left: 48%;
+    margin-left: -150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.highscorepage h1 {
+    color: darkblue;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 10px;
+}
+
+.highscore .btn {
+    width: fit-content;
+}
+
+.hscoreslist p {
+    color: darkred;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#highscorebuttons {
+    padding: 10px;
+}
+
+#hidden,
+.hidden {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+    position: fixed;
+    top: 150px;
+    left: 45%;
+    margin-left: -150px;
+    padding: 20px;
+}
+
+@media (hover: hover) {
+
+    header button:hover {
+        background-color: rgb(118, 117, 130);
+    }
+
+    .instructions button:hover {
+        background-color: rgb(163, 1, 1);
+        color: white;
+        box-shadow: 0 0 15px 3px rgb(53, 53, 53);
+        border: 2px solid rgb(72, 72, 72);
+
+    }
+
+    .btn:hover {
+        background-color: rgb(118, 117, 130);
+    }
+
+}
+
+@media (hover: none) {}
+
+@media (max-width: 426px) {
+    * {
+        font-size: 1rem;
+    }
+
+    header button {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 100px;
+        height: fit-content;
+    }
+
+    .instructions h1 {
+        font-size: 145%;
+    }
+
+    .instructions p {
+        font-size: 110%;
+        color: black;
+        text-align: center;
+    }
+
+    .quizdone {
+        margin-left: -175px;
+        width: 300px;
+    }
+
+    .quizdone h1 {
+        font-size: 2.0rem;
+    }
+
+    .highscorepage {
+        position: fixed;
+        top: 150px;
+        left: 48%;
+        margin-left: -150px;
+        padding: 20px;
+    }
+
+    .hscoreslist p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .quizdone {
+        position: fixed;
+        top: 150px;
+        left: 45%;
+        margin-left: -150px;
+        padding: 20px;
+    }
+}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    
+  </head>
+  <body>
+    <header>
+      <button id="highscore">VIEW HIGH SCORES</button>
+      <div class="timer">
+        <p>Time:&nbsp</p><p id="timer">00 : 00</p>
+      </div>
+    </header>
+    <div id="instructions" class="instructions">
+        <h1>CODING QUIZ CHALLENGE</h1>
+        <P>Try to answer all questions within 60 seconds.</P>
+        <p>Fastest you are in getting all answers correct, higher the score.</p>
+        <button id="start">START</button>
+    </div>
+    <div id="questions" class="questions hidden" >
+        <h1 id="question">Question:</h1>
+        <div id="answer-buttons" class="answers">
+          <button id="btn1" class="btn">A.&nbsp <span id="answer1"></span></button>
+          <button id="btn2" class="btn">B.&nbsp <span id="answer2"></span></button>
+          <button id="btn3" class="btn">C.&nbsp <span id="answer3"></span></button>
+          <button id="btn4" class="btn">D.&nbsp <span id="answer4"></span></button>
+        </div>
+        <p id="answerConfirmation" class="answerConfirmation"></p>
+        </div> 
+    </div>
+    <div id="quizdone" class="quizdone hidden">
+      <h1>QUIZ DONE!!!</h1>
+      <h2 id="scored"></h2>
+      <textarea type="text" maxlength="8" id="textarea" placeholder="initials"></textarea>
+      <button class="btn" id="submit">Submit</button>
+    </div>
+    <section class="highscorepage hidden">
+      <h1>HIGH SCORES</h1>
+      <div id="hscoreslist" class="hscoreslist"></div>
+      <P id="highscorebuttons"></P>
+      <button class="btn" id="goback">Go back</button>
+      <button class="btn" id="clear">Clear scores</button>
+    </section>
+    
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
